@@ -1,0 +1,19 @@
+{
+  "name": "relevant.js",
+  "version": "1.0.0",
+  "description": "Javascript library for showing the content relevant to the user.",
+  "main": "relevant.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/atulmoglewar/relevantjs"
+  },
+  "author": "Atul Moglewar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/atulmoglewar/relevantjs/issues"
+  },
+  "homepage": "https://github.com/atulmoglewar/relevantjs"
+}

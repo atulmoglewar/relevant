@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script type="text/javascript" src="relevant.js"></script>
+    <script type="text/javascript">
+      var relevant;
+      function _onLoad() {
+        relevant = new Relevant();
+        relevant.showSpecific("windows");
+      }
+    </script>
+    <style type="text/css">
+      .block {
+        display: block;
+        color: red
+      }
+    </style>
+  </head>
+  <body onload="_onLoad()">
+    <span>
+      1. This step is common
+    </span>
+    <span class="block">
+      2. This step is common
+    </span>
+    <span data-relevant-key="windows" style="display: block;">
+      3. This is windows specific step
+    </span>
+    <span data-relevant-key="mac" style="display: block;">
+      3. This is Mac specific step
+    </span>
+    <span data-relevant-key="linux" style="display: block;">
+      3. This is Linux specific step
+    </span>
+    <span>4. This step is common</span>
+    <span data-relevant-key="windows" style="display: block;">
+      5. This is windows specific step
+    </span>
+  </body>
+</html>
