@@ -1,6 +1,6 @@
 {
-  "name": "relevant.js",
-  "version": "1.0.0",
+  "name": "relevant",
+  "version": "1.0.1",
   "description": "Javascript library for showing the content relevant to the user.",
   "main": "relevant.js",
   "scripts": {
