@@ -4,8 +4,10 @@
     <script type="text/javascript" src="../lib/relevant.js"></script>
     <script type="text/javascript">
       function _onLoad() {
-        // var relevant = new Relevant();
-        // relevant.showSpecific("windows");
+        var relevant = new Relevant();
+        var desktop = {name: "linux", group: "desktop"};
+        var mobile = {name: "android", group: "mobile"};
+        relevant.showSpecificFromGroups([desktop, mobile]);
       }
     </script>
     <style type="text/css">
@@ -23,32 +25,26 @@
       <span class="block">
         2. This step is common
       </span>
-      <span data-relevant-key="windows" data-relevant-key-group="platform" style="display: block;">
+      <span data-relevant-key="windows" data-relevant-key-group="desktop" style="display: block;">
         3. This is windows specific step
       </span>
-      <span data-relevant-key="mac" data-relevant-key-group="platform" style="display: block;">
+      <span data-relevant-key="mac" data-relevant-key-group="desktop" style="display: block;">
         3. This is Mac specific step
       </span>
-      <span data-relevant-key="linux" data-relevant-key-group="platform" style="display: block;">
+      <span data-relevant-key="linux" data-relevant-key-group="desktop" style="display: block;">
         3. This is Linux specific step
       </span>
       <span>4. This step is common</span>
-      <span data-relevant-key="windows" data-relevant-key-group="platform" style="display: block;">
+      <span data-relevant-key="windows" data-relevant-key-group="desktop" style="display: block;">
         5. This is windows specific step
       </span>  
     </div>
-    <div style="margin-bottom: 15px">
-      <div>This is a common tip</div>
-      <div data-relevant-key="salaried">This tip is for salaried employees</div>
-      <div data-relevant-key="self-employeed">This tip is for self-employeed</div>
-      <div>This is also a common tip</div>
-    </div>
-
+    
     <div style="margin-bottom: 15px">
       <div>This is common tip for mobile platforms</div>
-      <div data-relevant-key="android" data-relevant-key-group="mobile-platform">This tip is for android.</div>
-      <div data-relevant-key="ios" data-relevant-key-group="mobile-platform">This tip is for ios</div>
-      <div data-relevant-key="android" data-relevant-key-group="mobile-platform">This is another tip for android.</div>
+      <div data-relevant-key="android" data-relevant-key-group="mobile">This tip is for android.</div>
+      <div data-relevant-key="ios" data-relevant-key-group="mobile">This tip is for ios</div>
+      <div data-relevant-key="android" data-relevant-key-group="mobile">This is another tip for android.</div>
       <div>This is common tip for mobile platforms</div>
     </div>
   </body>
