@@ -1,15 +1,15 @@
 var webpack = require('webpack');
 var path = require('path');
-var libraryName = 'relevant';
-var outputFile = libraryName + '.js';
+var outputFile = 'relevant.js';
+var UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 
 var config = {
-  entry: __dirname + '/src/relevant.js',
+  entry: __dirname + '/src/main.js',
   devtool: 'source-map',
   output: {
     path: __dirname + '/lib',
     filename: outputFile,
-    library: libraryName,
+    library: "Relevant",
     libraryTarget: 'umd',
     umdNamedDefine: true
   },
@@ -21,18 +21,15 @@ var config = {
         exclude: /node_modules/,
         query: {
           presets: ['es2015']
-        }
-
+        },
       },
-      
     ]
   },
-  // resolve: {
-  //   root: [
-  //     path.resolve('./src')
-  //   ],
-  //   extensions: ['', '.js']
-  // }
+  plugins: [
+    new webpack.optimize.UglifyJsPlugin({
+      compress: { warnings: false },
+    })
+  ]
 };
 
 module.exports = config;

@@ -6,7 +6,10 @@
   "scripts": {
     "compile": "babel --source-maps -d lib/ src/"
   },
-  "keywords": ["relevant", "relevant content"],
+  "keywords": [
+    "relevant",
+    "relevant content"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/atulmoglewar/relevantjs"
@@ -22,6 +25,7 @@
     "babel-core": "^6.24.1",
     "babel-loader": "^7.0.0",
     "babel-preset-es2015": "^6.24.1",
+    "uglifyjs-webpack-plugin": "^0.4.3",
     "webpack": "^2.4.1"
   }
 }
