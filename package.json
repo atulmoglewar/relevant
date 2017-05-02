@@ -6,6 +6,7 @@
   "scripts": {
     "compile": "babel --source-maps -d lib/ src/"
   },
+  "keywords": ["relevant", "relevant content"],
   "repository": {
     "type": "git",
     "url": "https://github.com/atulmoglewar/relevantjs"
