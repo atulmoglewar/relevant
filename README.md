@@ -1,8 +1,8 @@
 # What is Relevant?
 
-A lot of time the target readers of article fall into different categories. For ex, consider you are writing article about configuring a software. Your target reader's categories in this case will be Windows, Mac and Linux users. For configuring software, most of the steps are common but then there are some steps specific to platform. Common practice followed in writing such an article is to write common steps and then adding paragraphs mentioning platform specific steps. Though this works, this approach adds unnecessary clutter in the article. If reader is a linux user he will have to skim through the article to decide what are relevant steps for him and what steps should he ignore. Wouldn’t it be nice if the reader sees only the content relevant to him? 
+A lot of time the target readers of article fall into different categories. For ex, consider you are writing an article about configuring a software. Your target reader's categories in this case will be Windows, Mac and Linux users. For configuring software, most of the steps are common but then there are some steps specific to platform. Common practice followed in writing such an article is to write common steps and then adding paragraphs mentioning platform specific steps. Though this approach works, it adds unnecessary clutter in the article. If reader is a linux user he will have to skim through the article to decide what are relevant steps for him and what steps should he ignore. Wouldn’t it be nice if the reader sees only the content relevant to him? 
 
-Relevant is a micro javascript library for showing the relevant content to the user. The author of the article will have to define the relevant keys and mark the relevancy in the HTML using **"data-relevant-key"** attribute. For example, if the article is about configuring software on different paltforms then the keys can be "windows", "mac" and "linux". The example below shows how to use it. 
+Relevant is a micro javascript library for showing the relevant content to the user. The author of the article will have to define the relevant keys and mark the relevancy in the HTML using **"data-relevant-key"** attribute. For example, if the article is about configuring software on different platforms then the keys can be "windows", "mac" and "linux". The example below shows how to use it. 
 ```sh
 <div>This is common content</div>
 <div data-relevant-key="windows">This is windows specific content</div>
@@ -57,6 +57,7 @@ The library exposes 3 public apis.
 
 ### **showAll()** 
 - Shows all the content.
+
 ### **showSpecificFromGroup(name, group)** 
 - Only shows content of the element within the group whose **data-relevant-key** attribute value matched the argument passed.
 - *group* is optional parameter. If not given the element becomes part of special group called **data-relevant-key-group-none**.
