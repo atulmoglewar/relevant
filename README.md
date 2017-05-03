@@ -54,6 +54,7 @@ relevant.showSpecificFromGroups([desktop, mobile]);
 Deciding on UI/UX for showing the relevant content will be author's responsibility. For the example above, software configuration example above, author can choose to identify the OS when the page is loaded and call the showSpecific function with correct value. 
 
 The library exposes 3 public apis.
+
 ### **showAll()** 
 - Shows all the content.
 ### **showSpecificFromGroup(name, group)** 

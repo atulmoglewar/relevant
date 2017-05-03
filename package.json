@@ -1,7 +1,7 @@
 {
   "name": "relevant",
-  "version": "1.0.2",
-  "description": "Javascript library for showing the content relevant to the user.",
+  "version": "1.0.3",
+  "description": "Javascript library for showing the relevant content to the user.",
   "main": "relevant.js",
   "scripts": {
     "compile": "babel --source-maps -d lib/ src/"
