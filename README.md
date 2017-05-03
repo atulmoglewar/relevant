@@ -23,6 +23,9 @@ If the article is about tax saving tips. Then the reader's category could be "sa
 <div data-relevant-key="self-employeed">This tip is for self-employeed</div>
 <div>This is also a common tip</div>
 ```
+
+# Groups
+
 Relevant also supports groups using the optional attribute **"data-relevant-key-group"**. Grouping enables author to show relevant information from multiple groups at the same time. If group is not mentioned, the element becomes part of special group called **"data-relevant-key-group-none"**.
 For example, if the article is about desktop and mobile OS and the markup is as shown below - 
 
@@ -51,7 +54,11 @@ const mobile = {name: "android", group: "mobile"};
 relevant.showSpecificFromGroups([desktop, mobile]);
 ```
 
+# UI/UX
+
 Deciding on UI/UX for showing the relevant content will be author's responsibility. For the example above, software configuration example above, author can choose to identify the OS when the page is loaded and call the showSpecific function with correct value. 
+
+# APIs
 
 The library exposes 3 public apis.
 
@@ -68,3 +75,19 @@ The library exposes 3 public apis.
 
 
 The library makes sure to restore the correct css display type of the element as shown in the **example1.html** in the repository.
+
+# How to use
+
+```sh
+<script type="text/javascript" src="/lib/relevant.js"></script>
+let r = new Relevant();
+r.showSpecificFromGroup(name, group);
+```
+
+### **OR**
+
+```sh
+import Relevant from 'relevant';
+let r = new Relevant();
+r.showSpecificFromGroup(name, group);
+```
